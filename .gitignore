@@ -5,3 +5,6 @@
 project.Rcheck/
 project*.tar.gz
 project*.tgz
+toypackageNK.Rcheck/
+toypackageNK*.tar.gz
+toypackageNK*.tgz
