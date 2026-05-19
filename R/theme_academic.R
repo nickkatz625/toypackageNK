@@ -3,10 +3,13 @@
 #' @param base_size A positive integer value
 #'
 #' @returns plot with theme added when passed with ggplot2 (centralized plot title, grid lines removed)
-#' @importFrom ggplot theme_classic theme element_blank  element_text
+#' @importFrom ggplot2 theme_classic theme element_blank  element_text
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
+#' p <- ggplot(data = mtcars) + geom_point(aes(x = mpg, y = hp)) + labs(title = "plot_title")
+#' p + theme_academic()
 theme_academic <- function(base_size = 12)
 {
   ggplot2::theme_classic(base_size = base_size) +
@@ -14,3 +17,4 @@ theme_academic <- function(base_size = 12)
                    panel.grid.major = ggplot2::element_blank(),
                    panel.grid.minor = ggplot2::element_blank())
 }
+
