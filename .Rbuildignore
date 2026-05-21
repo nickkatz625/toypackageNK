@@ -7,3 +7,4 @@
 ^toypackageNK.*\.tar\.gz$
 ^toypackageNK.*\.tgz$
 ^LICENSE\.md$
+^data-raw$
