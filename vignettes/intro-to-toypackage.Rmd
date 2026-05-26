@@ -1,0 +1,36 @@
+---
+title: "Introduction to Toy Package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to Toy Package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The `toypackage` provides convenience functions for some common tasks. To install this package from GitHub, use
+
+```{r, eval=FALSE}
+# install.packages("remotes")
+# install.packages("devtools")
+devtools::install_github("nickkatz625/toypackageNK")
+```
+
+Load the package using the following code.
+
+```{r setup}
+library(toypackageNK)
+```
+
+The package contains three functions
+
+* `strsplit1`
+
+* `min_max_scale`
+* `theme_academic`
